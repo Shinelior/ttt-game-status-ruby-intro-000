@@ -15,7 +15,9 @@ def full?(board)
  end
 end
 def draw?(board)
-  
+  if board.all?{|i| i!=" "} 
+    return true
+  end
   if won?(board)==false && full(board)==true
     return true
   else
