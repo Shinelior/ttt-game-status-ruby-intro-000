@@ -20,8 +20,10 @@ def draw?(board)
   else
     return false
   end
-  if won?(board)== WIN_COMBINATIONS[0]
-    return false
+  if won?(board)==false
+    return true
+  else
+    false
   
   end
 end
