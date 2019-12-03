@@ -20,7 +20,7 @@ def draw?(board)
   else
     return false
   end
-  if won?(board)==true
+  if won?(board)==board[0] == "X" && board[1]== "X" && board[2]== "X"
     return false
   
   end
